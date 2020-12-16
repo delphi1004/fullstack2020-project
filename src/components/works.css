@@ -1,0 +1,100 @@
+:root {
+  --transitionTime:0.7s;
+}
+
+#worksContainer{
+    background-color: #426585;
+    /* background-color: #22aacb; */
+    /* background-color: #3a5875; */
+    width:100%;
+    height:100%;
+    margin-bottom: 100px;
+    top:0;
+    position: absolute;
+    z-index: -1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    color:white;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#workMenuContainer{
+  position:relative;
+  right: 0%;
+  text-align: left;
+  top:0px;
+  width:100%;
+  height:444px;
+  font-size: 25px;
+  font-weight: lighter;
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content:center;
+}
+
+#works-generativeArt{
+  margin: 0;
+  margin-bottom: 12px;
+  position: relative;
+  opacity: 0;
+  right:-20vw;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 menu;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 menu;
+  animation-delay: 0s;
+}
+
+#works-interactiveArt {
+  margin: 0;
+  margin-bottom: 12px;
+  position: relative;
+  opacity: 0;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 menu;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 menu;
+  animation-delay: 0.1s;
+}
+
+#works-modeling{
+  margin: 0;
+  margin-bottom: 12px;
+  position: relative;
+  opacity: 0;
+  right:-20vw;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 menu;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 menu;
+  animation-delay: 0.2s;
+}
+
+#works-software{
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  right:-20vw;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 menu;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 menu;
+  animation-delay: 0.3s;
+}
+
+@keyframes menu {
+  0% {right:-20vw;opacity: 0}
+  60% {right:-5.3vw}
+  100% {right:-5.5vw;opacity: 1}
+}
+
+#workMenuContainer > p{
+  color:black;
+  transition: 0.1s;
+}
+
+#workMenuContainer > p:active{
+  color:white;
+}
+
+#workMenuContainer > p:hover{
+  color:white;
+  transition: all 0.5s ease-out;
+}
