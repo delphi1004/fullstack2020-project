@@ -97,7 +97,7 @@ export const Data_WorksMenu_Generative = {
   contents: [
     {
       title: 'GENERATIVE  ART',
-      titleImage:'/public/images/works/thumbnail/ganerative_brush_01.png',
+      titleImage:'public/images/works/thumbnail/ganerative_brush_01.png',
       description: '“This may sound paradoxical, but the machine, which is thought to be cold and inhuman, can help to realize what is most subjective, unattainable, and profound in a human being.” - Vera Molnar',
       author: 'Vera Molnar',
       backgroundColor: '#bf8726',
@@ -105,7 +105,7 @@ export const Data_WorksMenu_Generative = {
     },
     {
       title: 'INTERACTIVE ART',
-      titleImage:'/public/images/works/thumbnail/interactive_01.png',
+      titleImage:'./images/works/thumbnail/interactive_01.png',
       description: '“If our child doesn’t have time to finish a fish before an appointment, it’s certain that we won’t be leaving the building before the fish is in the aquarium.” - from Helsinki’s New Children’s Hospital',
       author: 'Vera Molnar',
       backgroundColor: '#bfa126',
@@ -113,7 +113,7 @@ export const Data_WorksMenu_Generative = {
     },
     {
       title: '3D MODELING',
-      titleImage:'/public/images/works/thumbnail/3dmodeling_12.png',
+      titleImage:'./images/works/thumbnail/3dmodeling_12.png',
       description: '“Fusion 360 is my favorite 3D modeling tool.”',
       author: 'Vera Molnar',
       backgroundColor: '#bfba26',
@@ -121,7 +121,7 @@ export const Data_WorksMenu_Generative = {
     },
     {
       title: 'SOFTWARE',
-      titleImage:'/public/images/works/thumbnail/software_01.png',
+      titleImage:'./images/works/thumbnail/software_01.png',
       description: '“Software architecture design is similar to design a city.”',
       author: 'Vera Molnar',
       backgroundColor: '#abbf26',
