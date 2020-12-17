@@ -30,9 +30,8 @@ module.exports = {
         loaders: ['style-loader', 'css-loader'],
       },
       {
-      test : /\.png$/,
-      exclude: /(node_modules)/,
-      loader : 'file-loader'
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=25000'
       }
     ],
   },
