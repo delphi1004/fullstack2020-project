@@ -16,7 +16,7 @@ export const global = {
 }
 
 export const Data_Generative = {
-  resourcePath: '/public/images/works',
+  resourcePath: './images/works',
   words: '“This may sound paradoxical, but the machine, which is thought to be cold and inhuman, can help to realize what is most subjective, unattainable, and profound in a human being.” - Vera Molnar',
   contents: [
     {

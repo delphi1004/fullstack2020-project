@@ -28,6 +28,11 @@ module.exports = {
       {
         test: /\.css$/,
         loaders: ['style-loader', 'css-loader'],
+      },
+      {
+      test : /\.png$/,
+      exclude: /(node_modules)/,
+      loader : 'file-loader'
       }
     ],
   },
