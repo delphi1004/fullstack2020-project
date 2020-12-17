@@ -9,6 +9,8 @@ const WorksCard = ({ index, info }) => {
   const delay = `${index / 3}s`
   const number = (index + 1).toString().padStart(2, 0)
 
+  console.log(info.titleImage)
+
   return (
     <div id='worksCard' style={{ '--backgroundColor': info.backgroundColor, '--delay': delay }}>
       <img id='thumbnailImage' src={info.titleImage} alt='image' />

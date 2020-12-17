@@ -103,30 +103,30 @@ export const Data_WorksMenu_Generative = {
       backgroundColor: '#bf8726',
       extraDescription: 'Processing openFrameworks Arduino'
     },
-    // {
-    //   title: 'INTERACTIVE ART',
-    //   titleImage:'public/images/works/thumbnail/interactive_01.png',
-    //   description: '“If our child doesn’t have time to finish a fish before an appointment, it’s certain that we won’t be leaving the building before the fish is in the aquarium.” - from Helsinki’s New Children’s Hospital',
-    //   author: 'Vera Molnar',
-    //   backgroundColor: '#bfa126',
-    //   extraDescription: 'Processing openFrameworks Arduino OpenCV Kinect sensor'
-    // },
-    // {
-    //   title: '3D MODELING',
-    //   titleImage:'public/images/works/thumbnail/3dmodeling_12.png',
-    //   description: '“Fusion 360 is my favorite 3D modeling tool.”',
-    //   author: 'Vera Molnar',
-    //   backgroundColor: '#bfba26',
-    //   extraDescription: 'Fusion 360 Maya'
-    // },
-    // {
-    //   title: 'SOFTWARE',
-    //   titleImage:'public/images/works/thumbnail/software_01.png',
-    //   description: '“Software architecture design is similar to design a city.”',
-    //   author: 'Vera Molnar',
-    //   backgroundColor: '#abbf26',
-    //   extraDescription: 'Objective-C Swift JavaScript React C C++ C# Node.js'
-    // }
+    {
+      title: 'INTERACTIVE ART',
+      titleImage:'public/images/works/thumbnail/interactive_01.png',
+      description: '“If our child doesn’t have time to finish a fish before an appointment, it’s certain that we won’t be leaving the building before the fish is in the aquarium.” - from Helsinki’s New Children’s Hospital',
+      author: 'Vera Molnar',
+      backgroundColor: '#bfa126',
+      extraDescription: 'Processing openFrameworks Arduino OpenCV Kinect sensor'
+    },
+    {
+      title: '3D MODELING',
+      titleImage:'public/images/works/thumbnail/3dmodeling_12.png',
+      description: '“Fusion 360 is my favorite 3D modeling tool.”',
+      author: 'Vera Molnar',
+      backgroundColor: '#bfba26',
+      extraDescription: 'Fusion 360 Maya'
+    },
+    {
+      title: 'SOFTWARE',
+      titleImage:'public/images/works/thumbnail/software_01.png',
+      description: '“Software architecture design is similar to design a city.”',
+      author: 'Vera Molnar',
+      backgroundColor: '#abbf26',
+      extraDescription: 'Objective-C Swift JavaScript React C C++ C# Node.js'
+    }
   ],
   data: Data_Generative
 }
