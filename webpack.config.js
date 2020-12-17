@@ -29,10 +29,27 @@ module.exports = {
         test: /\.css$/,
         loaders: ['style-loader', 'css-loader'],
       },
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   loader: 'file-loader',
+      //   options: {
+      //     name: '[name].[ext]',
+      //     outputPath: 'images/',
+      //     publicPath: 'images/',
+      //   },
+      // },
       {
-        test: /\.(gif|svg|jpg|png)$/,
-        loader: 'url-loader',
-      }
+       test: /\.(jpe?g|gif|png|svg)$/i,
+       use: [
+        {
+          loader: 'url-loader',
+           options: {
+            limit: false,
+            outputPath:'images/'
+          }
+        }
+      ]
+      },
     ],
   },
   resolve: {
@@ -40,6 +57,9 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+  },
+  performance: {
+    hints: false,
   },
   plugins: [
     new HtmlWebPackPlugin({
