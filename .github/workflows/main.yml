@@ -9,6 +9,19 @@ on:
     types: [opened, synchronize]
 
 jobs:
+
+  tagging:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.33.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          DEFAULT_BUMP: patch
+ 
   fullstack2020-project_deployment_pipeline:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'push' }}
