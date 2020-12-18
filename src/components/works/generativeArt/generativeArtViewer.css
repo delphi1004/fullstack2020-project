@@ -1,0 +1,17 @@
+#generativeArtViewer {
+  background-color:#bf8726;
+  width:100%;
+  position: absolute;
+  z-index: -2;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  align-items: center;
+  justify-content:space-between;
+}
+
+#separator{
+  width:100%;
+  height:200px;
+}

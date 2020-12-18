@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { setCurrentMenu } from '../reducer/statusReducer'
@@ -7,9 +8,9 @@ import './about.css'
 const About = () => {
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    dispatch(setCurrentMenu(global.menu.about))
-  }, [])
+  // useEffect(() => {
+  //   dispatch(setCurrentMenu(global.menu.about))
+  // }, [])
 
   return (
     <div id='aboutContainer'>

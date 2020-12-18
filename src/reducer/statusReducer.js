@@ -31,8 +31,8 @@ export const setCurrentWorksMenu = (id) => {
 
 const statusReducer = (state = statusInfo, action) => {
 
-  console.log('---- current menu', state)
-  console.log('---- current action', action)
+  // console.log('---- current menu', state)
+  // console.log('---- current action', action)
   switch (action.type) {
     case 'SET_CURRENT_MENU':
     {

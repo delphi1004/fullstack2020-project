@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Switch, Route , useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
@@ -7,17 +7,21 @@ import Header from './components/header'
 import Title from './components/title'
 import About from './components/about'
 import Works from './components/works'
+import GenerativeArtViewer from './components/works/generativeArt/generativeArtViewer'
 
 const RouterViewer = () => {
   const location = useLocation()
-  const currentMenu = useSelector(state => state.systemStatus.currentMenu)
+  const currentMenuChanged = useSelector(state => state.systemStatus.menuChanged)
+
+  console.log('currentMenuChanged ', currentMenuChanged)
 
   return (
-    <TransitionGroup mode = {'out-in'}>
-      <CSSTransition classNames='views' key={location.key} timeout={currentMenu >= 0 ? 0:1300}>
-        <Switch location = {location}>
+    <TransitionGroup>
+      <CSSTransition classNames='views' key={location.key} timeout={1500}>
+        <Switch location={location}>
           <Route exact path='/about' component={About}></Route>
           <Route exact path='/works' component={Works}></Route>
+          <Route exact path='/works/generativeart' component={GenerativeArtViewer}></Route>
           <Route exact path='/' component={Title}></Route>
         </Switch>
       </CSSTransition>
@@ -36,9 +40,6 @@ function App() {
     </div>
   )
 }
-
-
-
 
 export default App
 

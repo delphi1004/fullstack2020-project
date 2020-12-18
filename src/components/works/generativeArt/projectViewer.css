@@ -1,0 +1,84 @@
+#projectViewer {
+  /* background-color: blueviolet; */
+  z-index: -2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  align-items: center;
+  justify-content: space-between;
+  margin-left:0.1vw;
+  margin-bottom: 200px;
+}
+
+#images{
+  z-index: 1;
+  opacity: 1;
+  filter: brightness(100%);
+  height:40vw;
+  border-radius: 5px;
+}
+
+#descriptionContainer{
+  width: 30vw;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#title{
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  left:-11.3vw;
+}
+
+#year{
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#year-vertical{
+  border-left: 1.5px solid white;
+  height: 100px;
+  margin: 0;
+  margin-left: 16px;
+}
+
+#tool{
+  width:250px;
+  position: relative;
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  top:-110px;
+}
+
+#descriptionTitle{
+  width:200px;
+  position: relative;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  top:-110px;
+}
+
+#description{
+  text-align: justify;
+  width: 28vw;
+  text-indent: 1.6em;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  top:-100px;
+  left:17px;
+}
