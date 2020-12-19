@@ -2,6 +2,9 @@ import React from 'react'
 import './projectViewer.css'
 
 const ProjectViewer = ({ info }) => {
+
+  console.log('---- ', info.title, info.contentsImage)
+
   return (
     <div id='projectViewer'>
       <img id='images' src={info.contentsImage[0].default} alt='image' />
