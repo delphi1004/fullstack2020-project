@@ -33,6 +33,7 @@
   border-bottom: 1px solid white;
   text-decoration: none;
   transition: color 2.5s ease-out 0s;
+  
 }
 
 #mainMenu > a::before {
