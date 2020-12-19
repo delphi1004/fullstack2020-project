@@ -1,0 +1,15 @@
+name: fullstack2020-Project-Shcduled-health-check
+
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 0 * * *'
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/stale@v1.1.0
+      with:
+        healthcheck: "https://fullstack2020-project.herokuapp.com/health"
+        checkstring: "ok"
+        rollbackonhealthcheckfailed: true
