@@ -22,7 +22,7 @@ export const Data_Generative = {
     {
       year:2017,
       thumbnailImage: 'soundVis_01',
-      contentsImage: [require('../data/images/works/soundVis_01.JPG'), require('../data/images/works/soundVis_02.JPG'), require('../data/images/works/soundVis_03.JPG')],
+      contentsImage: [require('../data/images/works/soundvis_01.JPG'), require('../data/images/works/soundVis_02.JPG'), require('../data/images/works/soundVis_03.JPG')],
       title: 'Sound visualisation',
       subTitle: 'This project demonstrates how to convert sound into a physical object',
       descptionTitle:'a shape of \'Hello\' ',
@@ -60,9 +60,9 @@ export const Data_Generative = {
       description: 'Music and visual artwork are a valuable part of our daily life. Since both media induce human emotion, this thesis demonstrates how to convert music into visual artwork such as generative art. Especially, the project shows the method of connecting music emotion to the theme of colour. This thesis describes the human emotional model based on arousal and valence. Also, this thesis explains how colour affects our emotion. In order to connect music emotion into the colour theme, this thesis shows the method to retrieve music information which includes arousal and valence of the music. In order to generate visual artwork from the music, this thesis demonstrates the implementation of working software that integrates music emotion and musical characteristics such as frequency analysis. Besides, this thesis presents how to apply generative artwork into our daily life products..​'
     },
     {
-      year:2020,
+      year:2017,
       thumbnailImage: 'drawingmachine_01',
-      contentsImage: [require('../data/images/works/drawingmachine_01.jpg'), require('../data/images/works/drawingmachine_02.jpg'), require('../data/images/works/drawingmachine_03.jpg') , require('../data/images/works/drawingmachine_04.jpg'),require('../data/images/works/drawingmachine_05.jpg'),require('../data/images/works/drawingmachine_06.jpg')],
+      contentsImage: [require('../data/images/works/drawingmachine_05.JPG'), require('../data/images/works/drawingmachine_02.JPG'), require('../data/images/works/drawingmachine_03.JPG') , require('../data/images/works/drawingmachine_04.JPG'),require('../data/images/works/drawingmachine_05.JPG'),require('../data/images/works/drawingmachine_06.JPG')],
       title: 'Drawing machine',
       subTitle: 'Dawing machine expressed a morse code (ex:LOVE) as visual aspect.',
       tool: 'Arduino , Stepper motors , Sensors, Servo motors',
