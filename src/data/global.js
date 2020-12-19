@@ -22,7 +22,7 @@ export const Data_Generative = {
     {
       year:2017,
       thumbnailImage: 'soundVis_01',
-      contentsImage: [require('../data/images/works/soundvis_01.JPG'), require('../data/images/works/soundVis_02.JPG'), require('../data/images/works/soundVis_03.JPG')],
+      contentsImage: [require('../data/images/works/soundvis_01.JPG'), require('../data/images/works/soundvis_02.JPG'), require('../data/images/works/soundvis_03.JPG')],
       title: 'Sound visualisation',
       subTitle: 'This project demonstrates how to convert sound into a physical object',
       descptionTitle:'a shape of \'Hello\' ',
