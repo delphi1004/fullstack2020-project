@@ -12,7 +12,7 @@ export const global = {
     interactiveArt: 1,
     modeling: 2,
     software: 3,
-  }
+  },
 }
 
 export const Data_Generative = {
@@ -22,7 +22,7 @@ export const Data_Generative = {
     {
       year:2017,
       thumbnailImage: 'soundVis_01',
-      contentsImage: [require('../data/images/works/soundvis_01.JPG'), require('../data/images/works/soundvis_02.JPG'), require('../data/images/works/soundvis_03.JPG')],
+      contentsImage: ['soundvis_01.JPG', 'soundvis_02.JPG' , 'soundvis_03.JPG'],
       title: 'Sound visualisation',
       subTitle: 'This project demonstrates how to convert sound into a physical object',
       descptionTitle:'a shape of \'Hello\' ',
@@ -32,7 +32,7 @@ export const Data_Generative = {
     {
       year:2018,
       thumbnailImage: 'shape_01',
-      contentsImage: [require('../data/images/works/shape_01.png'), require('../data/images/works/shape_02.png'), require('../data/images/works/shape_03.png') , require('../data/images/works/shape_04.png')],
+      contentsImage: ['shape_01.png','shape_02.png','shape_03.png','shape_04.png'],
       title: 'Generative shapes',
       subTitle: 'This project is designed for the expression of name of people.',
       descptionTitle:'a shape of name ',
@@ -42,7 +42,7 @@ export const Data_Generative = {
     {
       year:2020,
       thumbnailImage: 'ganerative_brush_01',
-      contentsImage: [require('../data/images/works/ganerative_brush_01.jpg'), require('../data/images/works/ganerative_brush_02.jpg'), require('../data/images/works/ganerative_brush_03.jpg')],
+      contentsImage: ['ganerative_brush_01.jpg', 'ganerative_brush_02.jpg', 'ganerative_brush_03.jpg'],
       title: 'Beauty of randomness',
       subTitle: 'I am excited to create an algorithm for a brush and natural colour composition.',
       descptionTitle:'a beauty of randomness ',
@@ -52,7 +52,7 @@ export const Data_Generative = {
     {
       year:2020,
       thumbnailImage: 'masterthesis_03',
-      contentsImage: [require('../data/images/works/masterthesis_01.jpg'), require('../data/images/works/masterthesis_02.jpg'), require('../data/images/works/masterthesis_03.jpg') , require('../data/images/works/masterthesis_04.jpg'), require('../data/images/works/masterthesis_05.jpg')],
+      contentsImage: ['masterthesis_01.jpg', 'masterthesis_02.jpg', 'masterthesis_03.jpg' , 'masterthesis_04.jpg', 'masterthesis_05.jpg'],
       title: 'Seeing sound',
       subTitle: 'This project demonstrates the implementation of working software that integrates music emotion and musical characteristics such as frequency analysis.',
       tool: 'processing',
@@ -62,7 +62,7 @@ export const Data_Generative = {
     {
       year:2017,
       thumbnailImage: 'drawingmachine_01',
-      contentsImage: [require('../data/images/works/drawingmachine_05.JPG'), require('../data/images/works/drawingmachine_02.JPG'), require('../data/images/works/drawingmachine_03.JPG') , require('../data/images/works/drawingmachine_04.JPG'),require('../data/images/works/drawingmachine_05.JPG'),require('../data/images/works/drawingmachine_06.JPG')],
+      contentsImage: ['drawingmachine_05.JPG', 'drawingmachine_01.JPG', 'drawingmachine_02.JPG' , 'drawingmachine_03.JPG','drawingmachine_04.JPG','drawingmachine_06.JPG'],
       title: 'Drawing machine',
       subTitle: 'Dawing machine expressed a morse code (ex:LOVE) as visual aspect.',
       tool: 'Arduino , Stepper motors , Sensors, Servo motors',
@@ -107,7 +107,7 @@ export const Data_WorksMenu_Generative = {
     {
       id:global.worksMenu.generativeArt,
       title: 'GENERATIVE  ART',
-      titleImage:require('../data/images/works/thumbnail_ganerative_brush_01.png'),
+      titleImage:require('../data/images/thumbnail/thumbnail_ganerative_brush_01.png'),
       description: '“This may sound paradoxical, but the machine, which is thought to be cold and inhuman, can help to realize what is most subjective, unattainable, and profound in a human being.” - Vera Molnar',
       author: 'Vera Molnar',
       backgroundColor: '#bf8726',
@@ -116,7 +116,7 @@ export const Data_WorksMenu_Generative = {
     {
       id:global.worksMenu.interactiveArt,
       title: 'INTERACTIVE ART',
-      titleImage:require('../data/images/works/thumbnail_interactive_01.png'),
+      titleImage:require('../data/images/thumbnail/thumbnail_interactive_01.png'),
       description: '“If our child doesn’t have time to finish a fish before an appointment, it’s certain that we won’t be leaving the building before the fish is in the aquarium.” - from Helsinki’s New Children’s Hospital',
       author: 'Vera Molnar',
       backgroundColor: '#bfa126',
@@ -125,7 +125,7 @@ export const Data_WorksMenu_Generative = {
     {
       id:global.worksMenu.modeling,
       title: '3D MODELING',
-      titleImage:require('../data/images/works/thumbnail_3dmodeling_12.png'),
+      titleImage:require('../data/images/thumbnail/thumbnail_3dmodeling_12.png'),
       description: '“Fusion 360 is my favorite 3D modeling tool.”',
       author: 'Vera Molnar',
       backgroundColor: '#bfba26',
@@ -134,7 +134,7 @@ export const Data_WorksMenu_Generative = {
     {
       id:global.worksMenu.software,
       title: 'SOFTWARE',
-      titleImage:require('../data/images/works/thumbnail_software_01.png'),
+      titleImage:require('../data/images/thumbnail/thumbnail_software_01.png'),
       description: '“Software architecture design is similar to design a city.”',
       author: 'Vera Molnar',
       backgroundColor: '#abbf26',
