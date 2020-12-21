@@ -4,13 +4,15 @@
 
 html {
   -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
   scrollbar-width: none;
   scroll-snap-type: y proximity;
 }
 
 .App {
   text-align: center;
-   overflow: hidden;
+  overflow: hidden;
 }
 
 .App-header {

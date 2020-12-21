@@ -1,0 +1,12 @@
+  #project-container{
+    /* background-color: #22aacb; */
+    /* background-color: #3a5875; */
+    background-color:#bf8726;
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    overflow-y: scroll;
+    z-index: -1;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+  }

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './App.css'
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom'
 import React from 'react'
@@ -7,13 +8,13 @@ import Header from './components/header'
 import Title from './components/title'
 import About from './components/about'
 import Works from './components/works'
-import GenerativeArtViewer from './components/works/generativeArt/generativeArtViewer'
+import ProjectContainer from './components/projectContainer'
 
 const RouterViewer = () => {
   const location = useLocation()
   const currentMenuChanged = useSelector(state => state.systemStatus.menuChanged)
 
-  console.log('currentMenuChanged ', currentMenuChanged)
+  // console.log('currentMenuChanged ', currentMenuChanged, ProjectContainer)
 
   return (
     <TransitionGroup>
@@ -21,7 +22,7 @@ const RouterViewer = () => {
         <Switch location={location}>
           <Route exact path='/about' component={About}></Route>
           <Route exact path='/works' component={Works}></Route>
-          <Route exact path='/works/generativeart' component={GenerativeArtViewer}></Route>
+          <Route exact path='/works/generativeart' component={ProjectContainer}></Route>
           <Route exact path='/' component={Title}></Route>
         </Switch>
       </CSSTransition>

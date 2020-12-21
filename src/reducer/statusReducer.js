@@ -2,9 +2,9 @@ import { global } from '../data/global'
 
 const statusInfo = {
   currentMenu: global.menu.idle,
-  currentWorksMenu: global.menu.idle,
+  currentSubMenu: global.menu.idle,
   menuChanged: true,
-  worksMenuChanged:true
+  subMenuChanged:true
 }
 
 export const setCurrentMenu = (id) => {
@@ -18,12 +18,12 @@ export const setCurrentMenu = (id) => {
   }
 }
 
-export const setCurrentWorksMenu = (id) => {
+export const setCurrentSubMenu = (id) => {
   return dispatch => {
     dispatch(
       {
-        type: 'SET_CURRENT_WORKS_MENU',
-        currentWorksMenu : id
+        type: 'SET_CURRENT_SUB_MENU',
+        currentSubMenu : id
       }
     )
   }
@@ -41,11 +41,11 @@ const statusReducer = (state = statusInfo, action) => {
         menuChanged: state.currentMenu !== action.currentMenu ? true : false
       }
     }
-    case 'SET_CURRENT_WORKS_MENU':
+    case 'SET_CURRENT_SUB_MENU':
     {
       return {
-        ...state, currentWorksMenu: action.currentWorksMenu,
-        worksMenuChanged: state.currentWorksMenu !== action.currentWorksMenu ? true:false
+        ...state, currentSubMenu: action.currentSubMenu,
+        subMenuChanged: state.currentSubMenu !== action.currentSubMenu ? true:false
       }
     }
 

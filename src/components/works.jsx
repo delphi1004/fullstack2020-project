@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { setCurrentWorksMenu } from '../reducer/statusReducer'
+import { setCurrentSubMenu } from '../reducer/statusReducer'
 import { global } from '../data/global'
 import { Data_WorksMenu_Generative } from '../data/global'
 import './works.css'
@@ -10,7 +10,7 @@ const Works = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(setCurrentWorksMenu(global.menu.idle))
+    dispatch(setCurrentSubMenu(global.menu.idle))
   }, [])
 
   return (

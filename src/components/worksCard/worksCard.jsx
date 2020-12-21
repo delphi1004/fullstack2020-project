@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
-import { setCurrentWorksMenu } from '../../reducer/statusReducer'
+import { setCurrentSubMenu } from '../../reducer/statusReducer'
 import './worksCard.css'
 import { global } from '../../data/global'
 
@@ -13,7 +13,7 @@ const WorksCard = ({ index, info }) => {
 
   const clickHandler = (id) => {
     console.log('clicked id ', id)
-    dispatch(setCurrentWorksMenu(id))
+    dispatch(setCurrentSubMenu(id))
 
     switch (id) {
       case global.worksMenu.generativeArt: history.push('/works/generativeart'); break
