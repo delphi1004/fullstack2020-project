@@ -10,6 +10,7 @@ const GenerativeArtViewer = () => {
       {Data_Generative.contents.map((info, index) => (
         <ProjectViewer key={index} info={info} />
       ))}
+      <div id='separator'></div>
     </div>
   )
 }

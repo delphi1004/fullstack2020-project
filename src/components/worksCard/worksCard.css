@@ -6,7 +6,6 @@
 
 #worksCard {
   cursor: pointer;
-  overflow: hidden;
   width:285px;
   opacity: 0;
   margin:10px;
@@ -17,6 +16,7 @@
   animation: var(--transitionTime) ease-in-out 0s normal forwards 1 worksCard;
   animation-delay:var(--delay);
   transition: all 0.1s ease-in-out;
+  overflow: hidden;
 }
 
 @keyframes worksCard {
