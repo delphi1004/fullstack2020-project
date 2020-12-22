@@ -30,23 +30,16 @@ const ProjectViewer = ({ info }) => {
     )
 
     observer.observe(viewer.current)
-
-    window.onscroll = () => {
-      console.log('**', window)
-      // setOffset(prevState => {
-      //   if (prevState !== window.pageYOffset) {
-      //     console.log('scrolling...')
-      //   }
-      //   return window.pageYOffset
-      // })
-    }
+    return () => observer && observer.disconnect()
   }, [])
 
   // console.log(offSet, window.scrollY, window.pageYOffset
 
   return (
     <div id='projectViewer' ref={viewer}>
-      <img className={startAnimation ? 'project-images images-active' : 'project-images'} src={middleSizeImage.default} alt='image' />
+      <div id={startAnimation ? 'images-container' : ''}>
+        <img className={startAnimation ? 'project-images images-active' : 'project-images'} src={middleSizeImage.default} alt='image' />
+      </div>
       <div id='descriptionContainer'>
         <p className={startAnimation ? 'project-title title-active' : 'project-title'}>{info.title}</p>
         <p className={startAnimation ? 'project-year year-active' : 'project-year'}>{info.year}</p>

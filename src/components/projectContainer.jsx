@@ -12,18 +12,25 @@ const ProjectContainer = () => {
   const currentMenu = useSelector(state => state.systemStatus.currentMenu)
   const currentSubMenu = useSelector(state => state.systemStatus.currentSubMenu)
 
-  const handleScroll = (value) => {
-    //console.log('hehe', value.target.getBoundingClientRect(), window.pageYOffset)
+  const handleScroll = (e) => {
+    const totalScroll = document.documentElement.scrollTop
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    const scroll = `${totalScroll / windowHeight}`
+    console.log('hehe', totalScroll)
   }
 
   useEffect(() => {
+    console.log('hahahah')
     window.scrollTo(0, 0)
     const currentUrl = window.location.href.split('/')
     CurrentViewer = viewers[`${currentUrl[3]}-${currentUrl[4]}`]
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
-    <div id='project-container' onScroll={handleScroll}>
+    <div id='project-container'>
       {CurrentViewer &&
         <CurrentViewer />
       }
