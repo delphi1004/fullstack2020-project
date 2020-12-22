@@ -12,6 +12,10 @@ const ProjectContainer = () => {
   const currentMenu = useSelector(state => state.systemStatus.currentMenu)
   const currentSubMenu = useSelector(state => state.systemStatus.currentSubMenu)
 
+  const handleScroll = (value) => {
+    //console.log('hehe', value.target.getBoundingClientRect(), window.pageYOffset)
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0)
     const currentUrl = window.location.href.split('/')
@@ -19,7 +23,7 @@ const ProjectContainer = () => {
   }, [])
 
   return (
-    <div id='project-container'>
+    <div id='project-container' onScroll={handleScroll}>
       {CurrentViewer &&
         <CurrentViewer />
       }

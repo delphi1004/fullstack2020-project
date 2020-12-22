@@ -61,8 +61,8 @@ export const Data_Generative = {
     },
     {
       year:2017,
-      thumbnailImage: 'drawingmachine_01',
-      contentsImage: ['drawingmachine_05.JPG', 'drawingmachine_01.JPG', 'drawingmachine_02.JPG' , 'drawingmachine_03.JPG','drawingmachine_04.JPG','drawingmachine_06.JPG'],
+      thumbnailImage: 'drawingmachine_02',
+      contentsImage: ['drawingmachine_04.JPG', 'drawingmachine_01.JPG', 'drawingmachine_02.JPG' , 'drawingmachine_03.JPG','drawingmachine_05.JPG','drawingmachine_06.JPG'],
       title: 'Drawing machine',
       subTitle: 'Dawing machine expressed a morse code (ex:LOVE) as visual aspect.',
       tool: 'Arduino , Stepper motors , Sensors, Servo motors',

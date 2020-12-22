@@ -7,18 +7,21 @@
   align-items: center;
   justify-content: space-between;
   margin-left:0.1vw;
-  margin-top: 200px;
+  margin-top: 70px;
   margin-bottom: 50px;
   scroll-snap-align: center;
 }
 
-#images{
+.project-images{
   cursor: pointer;
   z-index: 1;
   opacity: 0;
   filter: brightness(100%);
   height:38vw;
   border-radius: 5px;
+}
+
+.project-images.images-active{
   -webkit-animation: 0.5s ease-in-out 0s normal forwards 1 project-image;
   animation: 0.5s ease-in-out 0s normal forwards 1 project-image;
   animation-delay: 1.5s;
@@ -37,7 +40,7 @@
   padding-left: 50px;
 }
 
-.title{
+.project-title{
   left:100vw;
   opacity: 0;
   position: relative;
@@ -48,10 +51,9 @@
   letter-spacing: 0.2rem;
 }
 
-.title.title-active{
-  -webkit-animation: 0.5s ease-out 0s normal forwards 1 project-title;
-  animation: 0.5s ease-out 0s normal forwards 1 project-title;
-  /* animation-delay: 0.3s; */
+.project-title.title-active{
+  -webkit-animation: 0.7s ease-out 0s normal forwards 1 project-title;
+  animation: 0.7s ease-out 0s normal forwards 1 project-title;
 }
 
 @keyframes project-title {
@@ -60,12 +62,15 @@
   100% {opacity:1;left:-11.3vw;}
 } 
 
-#year{
+.project-year{
   opacity: 0;
   left:100vw;
   position: relative;
   font-size: 18px;
   font-weight: 300;
+}
+
+.project-year.year-active{
   -webkit-animation: 0.7s ease-in-out 0s normal forwards 1 year-title;
   animation: 0.8s ease-in-out 0s normal forwards 1 year-title;
 }
@@ -75,13 +80,16 @@
   100% {left:0;opacity: 1}
 }
 
-#year-vertical{
+.project-year-vertical{
   opacity: 0;
   border-left: 1.5px solid rgb(255,255,255,1);
   height: 100px;
   margin: 0;
   margin-left: 16px;
-  -webkit-animation: 1s ease-in-out 0s normal forwards 1 year-vertical-bar;
+}
+
+.project-year-vertical.year-vertical-active{
+   -webkit-animation: 1s ease-in-out 0s normal forwards 1 year-vertical-bar;
   animation: 1s ease-in-out 0s normal forwards 1 year-vertical-bar;
 }
 
@@ -90,7 +98,7 @@
   100% {opacity: 1;}
 }
 
-#tool{
+.project-tool{
   opacity:0;
   width:250px;
   position: relative;
@@ -99,7 +107,10 @@
   font-weight: 200;
   letter-spacing: 0.2rem;
   top:-110px;
-  -webkit-animation: 0.9s ease-in-out 0s normal forwards 1 tool-title;
+}
+
+.project-tool.tool-active{
+   -webkit-animation: 0.9s ease-in-out 0s normal forwards 1 tool-title;
   animation: 0.9s ease-in-out 0s normal forwards 1 tool-title;
 }
 
@@ -108,7 +119,7 @@
   100% {left:0;padding-left:35px;opacity: 1}
 }
 
-#descriptionTitle{
+.project-descriptionTitle{
   opacity: 0;
   width:200px;
   position: relative;
@@ -117,6 +128,9 @@
   font-weight: 200;
   letter-spacing: 0.1rem;
   top:-110px;
+}
+
+.project-descriptionTitle.descriptionTitle-active{
   -webkit-animation: 1s ease-in-out 0s normal forwards 1 descriptionTitle;
   animation: 1s ease-in-out 0s normal forwards 1descriptionTitle;
   animation-delay: 3s;
@@ -127,7 +141,7 @@
   100% {opacity: 1}
 }
 
-#description{
+.project-description{
   opacity: 0;
   text-align: justify;
   width: 28vw;
@@ -140,6 +154,9 @@
   letter-spacing: 0.1rem;
   top:-100px;
   left:17px;
+}
+
+.project-description.description-active{
   -webkit-animation: 0.5s ease-in-out 0s normal forwards 1 project-description;
   animation: 0.5s ease-in-out 0s normal forwards project-description;
   animation-delay: 1.0s;

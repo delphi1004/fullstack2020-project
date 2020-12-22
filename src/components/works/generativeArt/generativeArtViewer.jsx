@@ -14,7 +14,7 @@ const GenerativeArtViewer = () => {
   }, [])
 
   return (
-    <div id='generativeArtViewer'>
+    <div id='generativeArtViewer' >
       <div id='separator' />
       {displayProjects &&
         Data_Generative.contents.map((info, index) => (
