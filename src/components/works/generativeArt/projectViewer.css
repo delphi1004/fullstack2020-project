@@ -30,7 +30,7 @@
 
 @keyframes project-image {
   0% {opacity: 0; height:38vw;}
-  40% {opacity: 0.6; height:40.2vw;}
+  40% {opacity: 0.6; height:40.1vw;}
   75% {opacity: 0.8; height:39.8vw;}
   100% {opacity: 1 ; height:40vw;}
 }
@@ -43,7 +43,7 @@
 
 .project-title{
   left:0vw;
-  opacity: 0.5;
+  opacity: 0.0;
   position: relative;
   z-index: 1;
   font-size: 85px;

@@ -1,22 +1,20 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useRef } from 'react'
 import './projectViewer.css'
 
 const ProjectViewer = ({ info }) => {
   const viewer = useRef(null)
   const [startAnimation, setStartAnimation] = useState(false)
-  const [offSet, setOffset] = useState()
+  const [enableMousehover, setEnableMousehover] = useState(false)
   const middleSizeImage = require(`../../../data/images/middleSize/${info.contentsImage[0]}`)
 
-  const handleScroll = (value) => {
-    console.log('hehe', value.target.getBoundingClientRect())
-  }
-
   useEffect(() => {
+    setTimeout(() => {
+      setEnableMousehover(true)
+    }, 2500)
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.intersectionRatio >= 0.4) {
+        if (entry.intersectionRatio >= 0.3) {
           setTimeout(() => {
             setStartAnimation(true)
           }, 0)
@@ -25,7 +23,7 @@ const ProjectViewer = ({ info }) => {
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.4
+        threshold: 0.3
       }
     )
 
@@ -33,11 +31,10 @@ const ProjectViewer = ({ info }) => {
     return () => observer && observer.disconnect()
   }, [])
 
-  // console.log(offSet, window.scrollY, window.pageYOffset
 
   return (
     <div id='projectViewer' ref={viewer}>
-      <div id={startAnimation ? 'images-container' : ''}>
+      <div id={enableMousehover ? 'images-container' : ''}>
         <img className={startAnimation ? 'project-images images-active' : 'project-images'} src={middleSizeImage.default} alt='image' />
       </div>
       <div id='descriptionContainer'>

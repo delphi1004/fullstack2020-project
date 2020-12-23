@@ -75,34 +75,36 @@ export const Data_Generative = {
 export const Data_Interactive = {
   resourcePath: './images/works',
   contents: [
+    // {
+    //   thumbnailImage: 'handtracking_01',
+    //   contentsImage: ['handtracking_01', 'handtracking_02', 'handtracking_02'],
+    //   title: 'Projection mapping',
+    //   subTitle: 'What happens if I can control a light?',
+    //   tool: 'Processing , openCV , Kinect sensor',
+    //   description: 'What happens if I can control a light? I created an interactive projection mapping system which could detect my palm position in 3D space. All the lights would rush to my palm like I am the center of the universe. In order to do that, I just used a projector and kinect sensor to detect the palm position.'
+    // },
     {
-      thumbnailImage: 'handtracking_01',
-      contentsImage: ['handtracking_01', 'handtracking_02', 'handtracking_02'],
-      title: 'Projection mapping',
-      subTitle: 'What happens if I can control a light?',
-      tool: 'Processing , openCV , Kinect sensor',
-      description: 'What happens if I can control a light? I created an interactive projection mapping system which could detect my palm position in 3D space. All the lights would rush to my palm like I am the center of the universe. In order to do that, I just used a projector and kinect sensor to detect the palm position.'
-    },
-    {
+      year:2017,
       thumbnailImage: 'game_controller_01',
-      contentsImage: ['game_controller_01', 'game_controller_02', 'game_controller_03'],
+      contentsImage: ['game_controller_01.JPG'],
       title: 'Game controller',
       subTitle: 'what if the game controller becomes an uncomfortable thing to play the game?',
+      descptionTitle:'shall we game?',
       tool: 'Arduino , Rotary sensors , Processing',
       description: 'The project name is “Game Together!” In modern society, the computer game has been growing hugely. Related in this industry, we can find many different types of a game controller such as a keyboard, Nintendo Wii, X-box controller etc. these controllers are well designed for one person to control their character in the game. It is handy and efficient. what happens if the game controller becomes an uncomfortable thing to play the game? what happens if only two people should co-work together to play a game? is it good for their relationship? or not?. Hence I designed a game controller which has a button and wheel on a box. So one controller only related in to move x-axis, and other is related in y-axis only. People should turn the wheels to move a character and archive the goal. I just want to give people new experience which is quite different than the conventional game controller.'
     },
-    {
-      thumbnailImage: 'aqua_07',
-      contentsImage: ['aqua_01', 'aqua_02', 'aqua_03','aqua_04'],
-      title: 'Digital aquarium',
-      subTitle: 'Aquarium project for Helsinki children\'s hospital',
-      tool: 'Arduino , Rotary sensors , Processing',
-      description: 'The project name is “Game Together!” In modern society, the computer game has been growing hugely. Related in this industry, we can find many different types of a game controller such as a keyboard, Nintendo Wii, X-box controller etc. these controllers are well designed for one person to control their character in the game. It is handy and efficient. what happens if the game controller becomes an uncomfortable thing to play the game? what happens if only two people should co-work together to play a game? is it good for their relationship? or not?. Hence I designed a game controller which has a button and wheel on a box. So one controller only related in to move x-axis, and other is related in y-axis only. People should turn the wheels to move a character and archive the goal. I just want to give people new experience which is quite different than the conventional game controller.'
-    },
+    // {
+    //   thumbnailImage: 'aqua_07',
+    //   contentsImage: ['aqua_01', 'aqua_02', 'aqua_03','aqua_04'],
+    //   title: 'Digital aquarium',
+    //   subTitle: 'Aquarium project for Helsinki children\'s hospital',
+    //   tool: 'Arduino , Rotary sensors , Processing',
+    //   description: 'The project name is “Game Together!” In modern society, the computer game has been growing hugely. Related in this industry, we can find many different types of a game controller such as a keyboard, Nintendo Wii, X-box controller etc. these controllers are well designed for one person to control their character in the game. It is handy and efficient. what happens if the game controller becomes an uncomfortable thing to play the game? what happens if only two people should co-work together to play a game? is it good for their relationship? or not?. Hence I designed a game controller which has a button and wheel on a box. So one controller only related in to move x-axis, and other is related in y-axis only. People should turn the wheels to move a character and archive the goal. I just want to give people new experience which is quite different than the conventional game controller.'
+    // },
   ]
 }
 
-export const Data_WorksMenu_Generative = {
+export const Data_WorksSubMenu = {
   contents: [
     {
       id:global.worksMenu.generativeArt,

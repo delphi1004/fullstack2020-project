@@ -17,6 +17,7 @@ const WorksCard = ({ index, info }) => {
 
     switch (id) {
       case global.worksMenu.generativeArt: history.push('/works/generativeart'); break
+      case global.worksMenu.interactiveArt: history.push('/works/interactiveart'); break
     }
   }
 

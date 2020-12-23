@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { setCurrentSubMenu } from '../reducer/statusReducer'
 import { global } from '../data/global'
-import { Data_WorksMenu_Generative } from '../data/global'
+import { Data_WorksSubMenu } from '../data/global'
 import './works.css'
 import WorksCard from './worksCard/worksCard'
 
@@ -16,7 +16,7 @@ const Works = () => {
   return (
     <div id='worksContainer'>
       <div id='workMenuContainer'>
-        {Data_WorksMenu_Generative.contents.map((info, index) => (
+        {Data_WorksSubMenu.contents.map((info, index) => (
           <WorksCard key={index} index={index} info={info} />
         ))}
       </div>
