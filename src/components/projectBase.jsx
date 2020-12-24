@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
 import './projectBase.css'
-import { Data_Generative, Data_Interactive } from '../data/global'
+import { Data_Generative, Data_Interactive, Data_Modeling, Data_Software } from '../data/global'
 import ProjectContainer from './works/generativeArt/projectContainer'
 
 let currentViewData
@@ -12,6 +12,12 @@ viewData['works-generativeart'] = {
 viewData['works-interactiveart'] = {
   data: Data_Interactive, title: 'Interactive Art', background: '#bfa126'
 }
+viewData['works-modeling'] = {
+  data: Data_Modeling, title: '3D Modeling', background: '#bfba26'
+}
+viewData['works-software'] = {
+  data: Data_Software, title: 'Software development', background: '#abbf26'
+}
 
 const ProjectBase = () => {
   const [backgroundColor, setBackgroundColor] = useState()
@@ -19,6 +25,7 @@ const ProjectBase = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
     const currentUrl = window.location.href.split('/')
+    console.log('----', currentUrl)
     currentViewData = viewData[`${currentUrl[3]}-${currentUrl[4]}`]
     setBackgroundColor(currentViewData.background)
   }, [])

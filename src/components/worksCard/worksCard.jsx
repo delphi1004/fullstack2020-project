@@ -18,6 +18,8 @@ const WorksCard = ({ index, info }) => {
     switch (id) {
       case global.worksMenu.generativeArt: history.push('/works/generativeart'); break
       case global.worksMenu.interactiveArt: history.push('/works/interactiveart'); break
+      case global.worksMenu.modeling: history.push('/works/modeling'); break
+      case global.worksMenu.software: history.push('/works/software'); break
     }
   }
 

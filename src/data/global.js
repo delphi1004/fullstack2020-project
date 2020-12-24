@@ -75,14 +75,16 @@ export const Data_Generative = {
 export const Data_Interactive = {
   resourcePath: './images/works',
   contents: [
-    // {
-    //   thumbnailImage: 'handtracking_01',
-    //   contentsImage: ['handtracking_01', 'handtracking_02', 'handtracking_02'],
-    //   title: 'Projection mapping',
-    //   subTitle: 'What happens if I can control a light?',
-    //   tool: 'Processing , openCV , Kinect sensor',
-    //   description: 'What happens if I can control a light? I created an interactive projection mapping system which could detect my palm position in 3D space. All the lights would rush to my palm like I am the center of the universe. In order to do that, I just used a projector and kinect sensor to detect the palm position.'
-    // },
+    {
+      year:2018,
+      thumbnailImage: 'aqua_08.JPG',
+      contentsImage: ['aqua_08.JPG', 'aqua_01.jpg', 'aqua_02.jpg','aqua_04.JPG','aqua_09.JPG'],
+      title: 'Digital aquarium',
+      subTitle: 'Aquarium project for Helsinki children\'s hospital',
+      descptionTitle : 'Interactive aquarium project for Helsinki children\'s hospital',
+      tool: 'Unity 3D , Arduino , Fusion 360 , Maya',
+      description: 'There was a project for Helsinki children\'s hospital. It was a student\'s volunteer project for the hospital. I was one of the team members which 4 people. We created an interactive art installation at the lobby of the hospital. Basically, kids could paint with there favorite color on the paper which already have a skeleton of a fish. Then they put the paper on the machine called "scanner" which I developed. Finally, when they push a button then the fish which they painted will become a digital fish in the digital aquarium. While I was doing with talented people together, it was the most impressive project experience because it helps kids to feel happy and excited.'
+    },
     {
       year:2017,
       thumbnailImage: 'game_controller_01',
@@ -93,14 +95,60 @@ export const Data_Interactive = {
       tool: 'Arduino , Rotary sensors , Processing',
       description: 'The project name is “Game Together!” In modern society, the computer game has been growing hugely. Related in this industry, we can find many different types of a game controller such as a keyboard, Nintendo Wii, X-box controller etc. these controllers are well designed for one person to control their character in the game. It is handy and efficient. what happens if the game controller becomes an uncomfortable thing to play the game? what happens if only two people should co-work together to play a game? is it good for their relationship? or not?. Hence I designed a game controller which has a button and wheel on a box. So one controller only related in to move x-axis, and other is related in y-axis only. People should turn the wheels to move a character and archive the goal. I just want to give people new experience which is quite different than the conventional game controller.'
     },
-    // {
-    //   thumbnailImage: 'aqua_07',
-    //   contentsImage: ['aqua_01', 'aqua_02', 'aqua_03','aqua_04'],
-    //   title: 'Digital aquarium',
-    //   subTitle: 'Aquarium project for Helsinki children\'s hospital',
-    //   tool: 'Arduino , Rotary sensors , Processing',
-    //   description: 'The project name is “Game Together!” In modern society, the computer game has been growing hugely. Related in this industry, we can find many different types of a game controller such as a keyboard, Nintendo Wii, X-box controller etc. these controllers are well designed for one person to control their character in the game. It is handy and efficient. what happens if the game controller becomes an uncomfortable thing to play the game? what happens if only two people should co-work together to play a game? is it good for their relationship? or not?. Hence I designed a game controller which has a button and wheel on a box. So one controller only related in to move x-axis, and other is related in y-axis only. People should turn the wheels to move a character and archive the goal. I just want to give people new experience which is quite different than the conventional game controller.'
-    // },
+    {
+      year:2016,
+      thumbnailImage: 'handtracking_01',
+      contentsImage: ['handtracking_01.JPG'],
+      title: 'Projection mapping',
+      subTitle: 'What happens if I can control a light?',
+      descptionTitle:'What if I can control the light?',
+      tool: 'Processing , openCV , Kinect sensor',
+      description: 'I created an interactive projection mapping system which could detect my palm position in 3D space. All the lights would rush to my palm like I am the center of the universe. In order to do that, I just used a projector and kinect sensor to detect the palm position.'
+    },
+  ]
+}
+
+export const Data_Modeling = {
+  resourcePath: './images/works',
+  contents: [
+    {
+      year:2016,
+      thumbnailImage: 'aqua_08.JPG',
+      contentsImage: ['3dmodeling_12.jpg', '3dmodeling_01.jpg', '3dmodeling_02.jpg', '3dmodeling_03.jpg', '3dmodeling_04.jpg',
+        '3dmodeling_05.jpg', '3dmodeling_06.jpg', '3dmodeling_07.jpg', '3dmodeling_08.jpg', '3dmodeling_09.jpg', '3dmodeling_10.jpg',
+        '3dmodeling_11.jpg','3dmodeling_13.jpg'],
+      title: '3D Modeling',
+      subTitle: 'Aquarium project for Helsinki children\'s hospital',
+      descptionTitle : '3D modeling is one of my favorite hobbies',
+      tool: 'Fusion 360',
+      description: '3D modeling is one of my favorite hobbies'
+    }
+  ]
+}
+
+export const Data_Software = {
+  resourcePath: './images/works',
+  contents: [
+    {
+      year:'~ present',
+      thumbnailImage: 'aqua_08.JPG',
+      contentsImage: ['softwaredevelopment_04.jpg'],
+      title: 'Software development',
+      subTitle: 'Aquarium project for Helsinki children\'s hospital',
+      descptionTitle : 'Software architecture design is similar to design a city',
+      tool: 'UML, Visual studio, Xcode',
+      description: '3D modeling is one of my favorite hobbies'
+    },
+    {
+      year:'2010 ~ present',
+      thumbnailImage: 'aqua_08.JPG',
+      contentsImage: ['naturalsound_01.JPG'],
+      title: 'Natural Sound',
+      subTitle: 'Aquarium project for Helsinki children\'s hospital',
+      descptionTitle : 'Introducing the NaturalSound.',
+      tool: 'Xcode , Objective-C',
+      description: 'Become part of nature while listening to nature in your busy everyday life anywhere and at any time. - This time the UI design has been reformed for simple and easy to use. - 100% purely a natural sound. - There is absolutely no advertisement. Reviews from all over the world. “ Sooooo clear calm beautiful I love it so much better than any other nature sounding app wow great job on finding natures song. “ “this app is one of a kind - actual sound recordings - very relaxing - thanks for creating it”'
+    }
   ]
 }
 

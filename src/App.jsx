@@ -19,6 +19,8 @@ const RouterViewer = () => {
           <Route exact path='/works' component={Works}></Route>
           <Route exact path='/works/generativeart' component={ProjectBase}></Route>
           <Route exact path='/works/interactiveart' component={ProjectBase}></Route>
+          <Route exact path='/works/modeling' component={ProjectBase}></Route>
+          <Route exact path='/works/software' component={ProjectBase}></Route>
           <Route exact path='/' component={Title}></Route>
         </Switch>
       </CSSTransition>
