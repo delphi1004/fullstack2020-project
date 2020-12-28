@@ -20,6 +20,8 @@ export const Data_Generative = {
   words: '“This may sound paradoxical, but the machine, which is thought to be cold and inhuman, can help to realize what is most subjective, unattainable, and profound in a human being.” - Vera Molnar',
   contents: [
     {
+      width:40,
+      aspecRatio:0.66,
       year:2017,
       thumbnailImage: 'soundVis_01',
       contentsImage: ['soundvis_01.JPG', 'soundvis_02.JPG' , 'soundvis_03.JPG'],
@@ -30,6 +32,8 @@ export const Data_Generative = {
       description: 'The sound is the one of most sensory information for us to recognize what\'s going on the outside world. This audible information is mainly focused on our ears to perceive it. Hence, My question is that what happen if we could feel,see and touch this invisible energy. I mean how can our brain interpret the sound if the sound transformed into other medium. Does it help to listen to a sound? or it interrupts to enjoy listen to a sound? In order to do that, I used processing for sound analysis, Maya for build 3D object and laser cutter for cutting paper.'
     },
     {
+      width:28,
+      aspecRatio:1.41,
       year:2018,
       thumbnailImage: 'shape_01',
       contentsImage: ['shape_01.png','shape_02.png','shape_03.png','shape_04.png'],
@@ -40,6 +44,8 @@ export const Data_Generative = {
       description: 'This project is designed for the expression of name of people. As we have a unique name and it contains memories, identities, and joyful. Hence, I made a shape generator s/w by using Openframeworks. This s/w analysis people name and it generates very unique shapes related to the names. For instance, the first letter is the key value for the whole color scheme and rest of other letters effect on another visual effect.​'
     },
     {
+      width:50,
+      aspecRatio:0.66,
       year:2020,
       thumbnailImage: 'ganerative_brush_01',
       contentsImage: ['ganerative_brush_01.jpg', 'ganerative_brush_02.jpg', 'ganerative_brush_03.jpg'],
@@ -50,6 +56,8 @@ export const Data_Generative = {
       description: 'I am excited to create an algorithm for a brush and natural colour composition. It is always nice moment when I am waiting for that full rendering is done because there are beauty of randomness.​'
     },
     {
+      width:40,
+      aspecRatio:1.0,
       year:2020,
       thumbnailImage: 'masterthesis_03',
       contentsImage: ['masterthesis_01.jpg', 'masterthesis_02.jpg', 'masterthesis_03.jpg' , 'masterthesis_04.jpg', 'masterthesis_05.jpg'],
@@ -60,6 +68,8 @@ export const Data_Generative = {
       description: 'Music and visual artwork are a valuable part of our daily life. Since both media induce human emotion, this thesis demonstrates how to convert music into visual artwork such as generative art. Especially, the project shows the method of connecting music emotion to the theme of colour. This thesis describes the human emotional model based on arousal and valence. Also, this thesis explains how colour affects our emotion. In order to connect music emotion into the colour theme, this thesis shows the method to retrieve music information which includes arousal and valence of the music. In order to generate visual artwork from the music, this thesis demonstrates the implementation of working software that integrates music emotion and musical characteristics such as frequency analysis. Besides, this thesis presents how to apply generative artwork into our daily life products..​'
     },
     {
+      width:55,
+      aspecRatio:0.7,
       year:2017,
       thumbnailImage: 'drawingmachine_02',
       contentsImage: ['drawingmachine_04.JPG', 'drawingmachine_01.JPG', 'drawingmachine_02.JPG' , 'drawingmachine_03.JPG','drawingmachine_05.JPG','drawingmachine_06.JPG'],
@@ -76,6 +86,8 @@ export const Data_Interactive = {
   resourcePath: './images/works',
   contents: [
     {
+      width:45,
+      aspecRatio:0.75,
       year:2018,
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['aqua_08.JPG', 'aqua_01.jpg', 'aqua_02.jpg','aqua_04.JPG','aqua_09.JPG'],
@@ -86,6 +98,8 @@ export const Data_Interactive = {
       description: 'There was a project for Helsinki children\'s hospital. It was a student\'s volunteer project for the hospital. I was one of the team members which 4 people. We created an interactive art installation at the lobby of the hospital. Basically, kids could paint with there favorite color on the paper which already have a skeleton of a fish. Then they put the paper on the machine called "scanner" which I developed. Finally, when they push a button then the fish which they painted will become a digital fish in the digital aquarium. While I was doing with talented people together, it was the most impressive project experience because it helps kids to feel happy and excited.'
     },
     {
+      width:50,
+      aspecRatio:0.75,
       year:2017,
       thumbnailImage: 'game_controller_01',
       contentsImage: ['game_controller_01.JPG'],
@@ -96,6 +110,8 @@ export const Data_Interactive = {
       description: 'The project name is “Game Together!” In modern society, the computer game has been growing hugely. Related in this industry, we can find many different types of a game controller such as a keyboard, Nintendo Wii, X-box controller etc. these controllers are well designed for one person to control their character in the game. It is handy and efficient. what happens if the game controller becomes an uncomfortable thing to play the game? what happens if only two people should co-work together to play a game? is it good for their relationship? or not?. Hence I designed a game controller which has a button and wheel on a box. So one controller only related in to move x-axis, and other is related in y-axis only. People should turn the wheels to move a character and archive the goal. I just want to give people new experience which is quite different than the conventional game controller.'
     },
     {
+      width:48,
+      aspecRatio:0.75,
       year:2016,
       thumbnailImage: 'handtracking_01',
       contentsImage: ['handtracking_01.JPG'],
@@ -112,6 +128,8 @@ export const Data_Modeling = {
   resourcePath: './images/works',
   contents: [
     {
+      width:55,
+      aspecRatio:0.77,
       year:2016,
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['3dmodeling_12.jpg', '3dmodeling_01.jpg', '3dmodeling_02.jpg', '3dmodeling_03.jpg', '3dmodeling_04.jpg',
@@ -130,6 +148,8 @@ export const Data_Software = {
   resourcePath: './images/works',
   contents: [
     {
+      width:45,
+      aspecRatio:0.74,
       year:'~ present',
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['softwaredevelopment_04.jpg'],
@@ -140,9 +160,11 @@ export const Data_Software = {
       description: '3D modeling is one of my favorite hobbies'
     },
     {
+      width:25,
+      aspecRatio:1.77,
       year:'2010 ~ present',
       thumbnailImage: 'aqua_08.JPG',
-      contentsImage: ['naturalsound_01.JPG'],
+      contentsImage: ['naturalsound_01.JPG','naturalsound_02.JPG','naturalsound_03.JPG','naturalsound_04.JPG'],
       title: 'Natural Sound',
       subTitle: 'Aquarium project for Helsinki children\'s hospital',
       descptionTitle : 'Introducing the NaturalSound.',

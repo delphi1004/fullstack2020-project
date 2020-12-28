@@ -24,7 +24,7 @@
   padding-right:20px;
   padding-bottom: 2px;
   letter-spacing:0.1em;
-   -webkit-animation: 1.5s ease-in-out 0s normal forwards 1 project-category;
+  -webkit-animation: 1.5s ease-in-out 0s normal forwards 1 project-category;
   animation: 1.5s ease-in-out 0s normal forwards 1 project-category;
   animation-delay: 2.5s;
 }

@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useRef } from 'react'
 import './projectViewer.css'
+import ImageGallery from '../../imageGallery'
 
 const ProjectViewer = ({ info }) => {
   const viewer = useRef(null)
@@ -31,11 +33,11 @@ const ProjectViewer = ({ info }) => {
     return () => observer && observer.disconnect()
   }, [])
 
-
   return (
     <div id='projectViewer' ref={viewer}>
       <div id={enableMousehover ? 'images-container' : ''}>
-        <img className={startAnimation ? 'project-images images-active' : 'project-images'} src={middleSizeImage.default} alt='image' />
+        {/* <img className={startAnimation ? 'project-images images-active' : 'project-images'} src={middleSizeImage.default} alt='image' /> */}
+        <ImageGallery info={info} showOriginalSize={false} startAnimation={startAnimation} />
       </div>
       <div id='descriptionContainer'>
         <p className={startAnimation ? 'project-title title-active' : 'project-title'}>{info.title}</p>
