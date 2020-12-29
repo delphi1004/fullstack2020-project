@@ -46,7 +46,7 @@
   opacity: 0.0;
   position: relative;
   z-index: 1;
-  font-size: 85px;
+  font-size: 4vw;
   font-weight: 700;
   letter-spacing: 0.2rem;
 }
@@ -168,8 +168,8 @@
 }
 
 #images-container:hover ~ #descriptionContainer > .project-title.title-active{
-  -webkit-animation: 0.2s ease-out 0s normal forwards 1 project-title-hide;
-  animation: 0.2s ease-out 0s normal forwards 1 project-title-hide;
+  -webkit-animation: 0.4s ease-out 0s normal forwards 1 project-title-hide;
+  animation: 0.4s ease-out 0s normal forwards 1 project-title-hide;
 }
 
 @keyframes project-title-hide {

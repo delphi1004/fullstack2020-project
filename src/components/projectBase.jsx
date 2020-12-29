@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
 import './projectBase.css'
+import { useSelector } from 'react-redux'
 import { Data_Generative, Data_Interactive, Data_Modeling, Data_Software } from '../data/global'
 import ProjectContainer from './works/generativeArt/projectContainer'
 
@@ -20,6 +21,7 @@ viewData['works-software'] = {
 }
 
 const ProjectBase = () => {
+  const modalViewShown = useSelector(state => state.systemStatus.modalViewShown)
   const [backgroundColor, setBackgroundColor] = useState()
 
   useEffect(() => {
@@ -35,7 +37,7 @@ const ProjectBase = () => {
   }
 
   return (
-    <div id='project-base' style={{ backgroundColor: backgroundColor }} >
+    <div className={!modalViewShown ? 'project-base' : 'project-base modelViewActivated'} style={{ backgroundColor: backgroundColor }} >
       <ProjectContainer info={currentViewData} />
     </div >
   )

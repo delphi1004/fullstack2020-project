@@ -1,13 +1,17 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useRef } from 'react'
+import { useDispatch } from 'react-redux'
 import './projectViewer.css'
 import ImageGallery from '../../imageGallery'
+import { setModalViewShown } from '../../../reducer/statusReducer'
+import FullScreenProjectViewer from './fullScreenProjectViewer'
 
 const ProjectViewer = ({ info }) => {
   const viewer = useRef(null)
+  const dispatch = useDispatch()
+  const [pageNo, setPageNo] = useState(0)
   const [startAnimation, setStartAnimation] = useState(false)
   const [enableMousehover, setEnableMousehover] = useState(false)
-  const middleSizeImage = require(`../../../data/images/middleSize/${info.contentsImage[0]}`)
+  const [showFullScreen, setShowFullScreen] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
@@ -33,11 +37,25 @@ const ProjectViewer = ({ info }) => {
     return () => observer && observer.disconnect()
   }, [])
 
+  const fullScreenhandler = (pageNo) => {
+    console.log('full screen!', pageNo)
+    setPageNo(pageNo)
+    dispatch(setModalViewShown(true))
+    setShowFullScreen(true)
+  }
+
+  const closeFullScreenhandler = () => {
+    dispatch(setModalViewShown(false))
+    setShowFullScreen(false)
+  }
+
   return (
     <div id='projectViewer' ref={viewer}>
+      {showFullScreen &&
+        <FullScreenProjectViewer info={info} initialPageNo={pageNo} closeFullScreenhandler={closeFullScreenhandler} />
+      }
       <div id={enableMousehover ? 'images-container' : ''}>
-        {/* <img className={startAnimation ? 'project-images images-active' : 'project-images'} src={middleSizeImage.default} alt='image' /> */}
-        <ImageGallery info={info} showOriginalSize={false} startAnimation={startAnimation} />
+        <ImageGallery info={info} showOriginalSize={false} startAnimation={startAnimation} fullScreenhandler={fullScreenhandler} />
       </div>
       <div id='descriptionContainer'>
         <p className={startAnimation ? 'project-title title-active' : 'project-title'}>{info.title}</p>

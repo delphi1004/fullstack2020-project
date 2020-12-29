@@ -21,7 +21,8 @@ export const Data_Generative = {
   contents: [
     {
       width:40,
-      aspecRatio:0.66,
+      aspecRatio: 0.66,
+      fullScreenScale: 1.9,
       year:2017,
       thumbnailImage: 'soundVis_01',
       contentsImage: ['soundvis_01.JPG', 'soundvis_02.JPG' , 'soundvis_03.JPG'],
@@ -33,7 +34,8 @@ export const Data_Generative = {
     },
     {
       width:28,
-      aspecRatio:1.41,
+      aspecRatio: 1.41,
+      fullScreenScale: 1.3,
       year:2018,
       thumbnailImage: 'shape_01',
       contentsImage: ['shape_01.png','shape_02.png','shape_03.png','shape_04.png'],
@@ -45,7 +47,8 @@ export const Data_Generative = {
     },
     {
       width:50,
-      aspecRatio:0.66,
+      aspecRatio: 0.66,
+      fullScreenScale: 1.5,
       year:2020,
       thumbnailImage: 'ganerative_brush_01',
       contentsImage: ['ganerative_brush_01.jpg', 'ganerative_brush_02.jpg', 'ganerative_brush_03.jpg'],
@@ -57,7 +60,8 @@ export const Data_Generative = {
     },
     {
       width:40,
-      aspecRatio:1.0,
+      aspecRatio: 1.0,
+      fullScreenScale: 1.3,
       year:2020,
       thumbnailImage: 'masterthesis_03',
       contentsImage: ['masterthesis_01.jpg', 'masterthesis_02.jpg', 'masterthesis_03.jpg' , 'masterthesis_04.jpg', 'masterthesis_05.jpg'],
@@ -69,7 +73,8 @@ export const Data_Generative = {
     },
     {
       width:55,
-      aspecRatio:0.7,
+      aspecRatio: 0.7,
+      fullScreenScale: 1.4,
       year:2017,
       thumbnailImage: 'drawingmachine_02',
       contentsImage: ['drawingmachine_04.JPG', 'drawingmachine_01.JPG', 'drawingmachine_02.JPG' , 'drawingmachine_03.JPG','drawingmachine_05.JPG','drawingmachine_06.JPG'],
@@ -87,10 +92,11 @@ export const Data_Interactive = {
   contents: [
     {
       width:45,
-      aspecRatio:0.75,
+      aspecRatio: 0.75,
+      fullScreenScale: 1.5,
       year:2018,
       thumbnailImage: 'aqua_08.JPG',
-      contentsImage: ['aqua_08.JPG', 'aqua_01.jpg', 'aqua_02.jpg','aqua_04.JPG','aqua_09.JPG'],
+      contentsImage: ['https://www.youtube.com/embed/FRKkWGA_G0s','https://www.youtube.com/embed/KFxfdGawWyI','aqua_08.JPG', 'aqua_01.jpg', 'aqua_02.jpg','aqua_04.JPG','aqua_09.JPG'],
       title: 'Digital aquarium',
       subTitle: 'Aquarium project for Helsinki children\'s hospital',
       descptionTitle : 'Interactive aquarium project for Helsinki children\'s hospital',
@@ -99,10 +105,11 @@ export const Data_Interactive = {
     },
     {
       width:50,
-      aspecRatio:0.75,
+      aspecRatio: 0.75,
+      fullScreenScale: 1.4,
       year:2017,
       thumbnailImage: 'game_controller_01',
-      contentsImage: ['game_controller_01.JPG'],
+      contentsImage: ['game_controller_01.jpg','game_controller_02.JPG','game_controller_03.JPG'],
       title: 'Game controller',
       subTitle: 'what if the game controller becomes an uncomfortable thing to play the game?',
       descptionTitle:'shall we game?',
@@ -111,10 +118,11 @@ export const Data_Interactive = {
     },
     {
       width:48,
-      aspecRatio:0.75,
+      aspecRatio: 0.75,
+      fullScreenScale: 1.4,
       year:2016,
       thumbnailImage: 'handtracking_01',
-      contentsImage: ['handtracking_01.JPG'],
+      contentsImage: ['https://www.youtube.com/embed/yYf2Ssi9EQA' , 'handtracking_01.JPG',],
       title: 'Projection mapping',
       subTitle: 'What happens if I can control a light?',
       descptionTitle:'What if I can control the light?',
@@ -129,7 +137,8 @@ export const Data_Modeling = {
   contents: [
     {
       width:55,
-      aspecRatio:0.77,
+      aspecRatio: 0.77,
+      fullScreenScale: 1.45,
       year:2016,
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['3dmodeling_12.jpg', '3dmodeling_01.jpg', '3dmodeling_02.jpg', '3dmodeling_03.jpg', '3dmodeling_04.jpg',
@@ -149,7 +158,8 @@ export const Data_Software = {
   contents: [
     {
       width:45,
-      aspecRatio:0.74,
+      aspecRatio: 0.74,
+      fullScreenScale: 1.45,
       year:'~ present',
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['softwaredevelopment_04.jpg'],
@@ -161,7 +171,8 @@ export const Data_Software = {
     },
     {
       width:25,
-      aspecRatio:1.77,
+      aspecRatio: 1.77,
+      fullScreenScale: 1.45,
       year:'2010 ~ present',
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['naturalsound_01.JPG','naturalsound_02.JPG','naturalsound_03.JPG','naturalsound_04.JPG'],

@@ -1,4 +1,4 @@
-  #project-base{
+  .project-base{
     /* background-color: #22aacb; */
     /* background-color: #3a5875; */
     /* background-color:#bf8726; */
@@ -9,3 +9,8 @@
     overflow-y: scroll;
     /* scroll-snap-type: y proximity; */
   }
+
+   .project-base.modelViewActivated{
+     overflow:hidden;
+     z-index: 5;
+   }

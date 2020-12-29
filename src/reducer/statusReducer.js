@@ -4,7 +4,8 @@ const statusInfo = {
   currentMenu: global.menu.idle,
   currentSubMenu: global.menu.idle,
   menuChanged: true,
-  subMenuChanged:true
+  subMenuChanged: true,
+  modalViewShown:false,
 }
 
 export const setCurrentMenu = (id) => {
@@ -29,6 +30,17 @@ export const setCurrentSubMenu = (id) => {
   }
 }
 
+export const setModalViewShown = (shown) => {
+  return dispatch => {
+    dispatch(
+      {
+        type: 'SET_MODAL_VIEW_SHOWN',
+        modalViewShown : shown
+      }
+    )
+  }
+}
+
 const statusReducer = (state = statusInfo, action) => {
 
   // console.log('---- current menu', state)
@@ -46,6 +58,12 @@ const statusReducer = (state = statusInfo, action) => {
       return {
         ...state, currentSubMenu: action.currentSubMenu,
         subMenuChanged: state.currentSubMenu !== action.currentSubMenu ? true:false
+      }
+    }
+    case 'SET_MODAL_VIEW_SHOWN':
+    {
+      return {
+        ...state, modalViewShown: action.modalViewShown,
       }
     }
 

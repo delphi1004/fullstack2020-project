@@ -1,17 +1,16 @@
-/* eslint-disable no-unused-vars */
 import './imageGallery.css'
 import React, { useEffect, useRef, useState } from 'react'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 
-const ImageGallery = ({ info, showOriginalSize, startAnimation }) => {
-  const gellaryHeight = { width: `${info.width}vw`, height: `${info.width * info.aspecRatio}vw` }
+const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenhandler = null, initialPageNo = 0 }) => {
+  const scale = showOriginalSize ? info.fullScreenScale : 1
+  const gellaryHeight = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
   const resourceLength = info.contentsImage.length
   const myRef = useRef(undefined)
-  const [calcIndicatorWidthOnce, setCalcIndicatorWidthOnce] = useState(true)
   const [indicatorWidth, setIndicatorWidth] = useState(0)
-  const [pageNo, setPageNo] = useState(0)
-  const [indicatorPos, setIndicatorPos] = useState(10)
+  const [pageNo, setPageNo] = useState(initialPageNo)
+  const [indicatorPos, setIndicatorPos] = useState(0)
 
   useEffect(() => {
     const handleResize = () => {
@@ -25,7 +24,7 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation }) => {
 
     if (myRef.current) {
       window.addEventListener('resize', handleResize)
-      setCalcIndicatorWidthOnce(false)
+      slideImage(pageNo)
       setTimeout(() => {
         if (myRef.current) {
           setIndicatorWidth(Math.round(myRef.current.offsetWidth / resourceLength))
@@ -98,7 +97,12 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation }) => {
     )
   }
 
-  // console.log(startAnimation, gellaryHeight)
+  const clickHandler = () => {
+    console.log(showOriginalSize)
+    if (!showOriginalSize) {
+      fullScreenhandler(pageNo)
+    }
+  }
 
   return (
     <div className={startAnimation ? 'gallery-container gallery-active' : 'gallery-container'} style={gellaryHeight}>
@@ -109,7 +113,7 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation }) => {
       {info.contentsImage.length > 1 && <ArrowForwardIosIcon id='scroll-next' onClick={onNexthandler} />}
 
       {/* <ZoomOutMapIcon id = 'full-screen'/> */}
-      <div id='gallery' ref={myRef}>
+      <div id='gallery' ref={myRef} onClick={() => clickHandler()}>
         {info.contentsImage.map((resource, index) => SelectResource(resource, index))}
       </div>
     </div >
