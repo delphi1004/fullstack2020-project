@@ -24,12 +24,9 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenhandle
 
     if (myRef.current) {
       window.addEventListener('resize', handleResize)
-      slideImage(pageNo)
-      setTimeout(() => {
-        if (myRef.current) {
-          setIndicatorWidth(Math.round(myRef.current.offsetWidth / resourceLength))
-        }
-      }, 1000)
+      setIndicatorWidth(Math.round(myRef.current.offsetWidth / resourceLength))
+      setIndicatorPos(pageNo * Math.round(myRef.current.offsetWidth / resourceLength))
+      myRef.current.scrollTo(pageNo * myRef.current.offsetWidth, 0)
     }
 
     return function cleanup() {
@@ -47,8 +44,6 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenhandle
   }
 
   const slideImage = (newPageNo) => {
-
-    console.log(newPageNo)
 
     if (newPageNo < 0 || newPageNo >= resourceLength) {
       newPageNo = 0

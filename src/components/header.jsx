@@ -18,9 +18,9 @@ const Header = () => {
       <div id='mainMenu'>
         <NavLink exact to='/about' activeClassName={'active'} onClick={() => { menuClicked(global.menu.about) }}>about</NavLink>
         <NavLink to='/works' activeClassName={'active'} onClick={() => { menuClicked(global.menu.works) }}>works</NavLink>
-        <NavLink exact to='/exhibition' activeClassName={'active'}>exhibition</NavLink>
-        <NavLink exact to='/cv' activeClassName={'active'}>cv</NavLink>
-        <NavLink exact to='/contact' activeClassName={'active'}>contact</NavLink>
+        <NavLink to='/exhibition' activeClassName={'active'} onClick={() => { menuClicked(global.menu.exhibition) }}>exhibition</NavLink>
+        {/* <NavLink exact to='/cv' activeClassName={'active'}>cv</NavLink> */}
+        <NavLink exact to='/contact' activeClassName={'active'} onClick={() => { menuClicked(global.menu.contact) }}>contact</NavLink>
       </div>
     </div >
   )

@@ -20,6 +20,8 @@ const WorksCard = ({ index, info }) => {
       case global.worksMenu.interactiveArt: history.push('/works/interactiveart'); break
       case global.worksMenu.modeling: history.push('/works/modeling'); break
       case global.worksMenu.software: history.push('/works/software'); break
+      case global.exhibitionMenu.whenlightEchoes: history.push('/exhibition/whenlightechoes'); break
+      case global.exhibitionMenu.seeingSound: history.push('/exhibition/seeingmusic'); break
     }
   }
 

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import './projectBase.css'
 import { useSelector } from 'react-redux'
-import { Data_Generative, Data_Interactive, Data_Modeling, Data_Software } from '../data/global'
+import { Data_Exhibition_WhenLightEchoes, Data_Exhibition_SeeingMusic, Data_Generative, Data_Interactive, Data_Modeling, Data_Software } from '../data/global'
 import ProjectContainer from './works/generativeArt/projectContainer'
 
 let currentViewData
@@ -18,6 +18,14 @@ viewData['works-modeling'] = {
 }
 viewData['works-software'] = {
   data: Data_Software, title: 'Software development', background: '#abbf26'
+}
+
+viewData['exhibition-whenlightechoes'] = {
+  data: Data_Exhibition_WhenLightEchoes, title: 'When light echoes', background: '#bf8726'
+}
+
+viewData['exhibition-seeingmusic'] = {
+  data: Data_Exhibition_SeeingMusic, title: 'Seeing music', background: '#bfa126'
 }
 
 const ProjectBase = () => {

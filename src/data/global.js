@@ -13,6 +13,13 @@ export const global = {
     modeling: 2,
     software: 3,
   },
+  exhibitionMenu: {
+    whenlightEchoes:10,
+    seeingSound: 11,
+  },
+  contactMenu: {
+    basicInfo:20,
+  },
 }
 
 export const Data_Generative = {
@@ -74,7 +81,7 @@ export const Data_Generative = {
     {
       width:55,
       aspecRatio: 0.7,
-      fullScreenScale: 1.4,
+      fullScreenScale: 1.30,
       year:2017,
       thumbnailImage: 'drawingmachine_02',
       contentsImage: ['drawingmachine_04.JPG', 'drawingmachine_01.JPG', 'drawingmachine_02.JPG' , 'drawingmachine_03.JPG','drawingmachine_05.JPG','drawingmachine_06.JPG'],
@@ -106,7 +113,7 @@ export const Data_Interactive = {
     {
       width:50,
       aspecRatio: 0.75,
-      fullScreenScale: 1.4,
+      fullScreenScale: 1.3,
       year:2017,
       thumbnailImage: 'game_controller_01',
       contentsImage: ['game_controller_01.jpg','game_controller_02.JPG','game_controller_03.JPG'],
@@ -119,7 +126,7 @@ export const Data_Interactive = {
     {
       width:48,
       aspecRatio: 0.75,
-      fullScreenScale: 1.4,
+      fullScreenScale: 1.3,
       year:2016,
       thumbnailImage: 'handtracking_01',
       contentsImage: ['https://www.youtube.com/embed/yYf2Ssi9EQA' , 'handtracking_01.JPG',],
@@ -138,7 +145,7 @@ export const Data_Modeling = {
     {
       width:55,
       aspecRatio: 0.77,
-      fullScreenScale: 1.45,
+      fullScreenScale: 1.2,
       year:2016,
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['3dmodeling_12.jpg', '3dmodeling_01.jpg', '3dmodeling_02.jpg', '3dmodeling_03.jpg', '3dmodeling_04.jpg',
@@ -172,7 +179,7 @@ export const Data_Software = {
     {
       width:25,
       aspecRatio: 1.77,
-      fullScreenScale: 1.45,
+      fullScreenScale: 1.10,
       year:'2010 ~ present',
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['naturalsound_01.JPG','naturalsound_02.JPG','naturalsound_03.JPG','naturalsound_04.JPG'],
@@ -182,6 +189,44 @@ export const Data_Software = {
       tool: 'Xcode , Objective-C',
       description: 'Become part of nature while listening to nature in your busy everyday life anywhere and at any time. - This time the UI design has been reformed for simple and easy to use. - 100% purely a natural sound. - There is absolutely no advertisement. Reviews from all over the world. “ Sooooo clear calm beautiful I love it so much better than any other nature sounding app wow great job on finding natures song. “ “this app is one of a kind - actual sound recordings - very relaxing - thanks for creating it”'
     }
+  ]
+}
+
+export const Data_Exhibition_WhenLightEchoes = {
+  resourcePath: './images/works',
+  contents: [
+    {
+      width:45,
+      aspecRatio: 0.74,
+      fullScreenScale: 1.45,
+      year:'26 May – 31 May 2019',
+      thumbnailImage: 'aqua_08.JPG',
+      contentsImage: ['https://www.youtube.com/embed/2yZoM1qjo9o','Korea_Exhibition_04.jpg','Korea_Exhibition_05.jpg', 'Korea_Exhibition_01.jpg','Korea_Exhibition_02.jpg','Korea_Exhibition_03.jpg'],
+      title: 'WHEN LIGHT ECHOES',
+      subTitle: 'Group exhibition aSSIST, Finland Tower, Seoul Korea',
+      descptionTitle : 'Group exhibition aSSIST, Finland Tower, Seoul Korea',
+      tool: 'Processing Kinect sensor 4K projector',
+      description: 'A light echo is a physical phenomenon caused by light reflected off surfaces and returning to the observer with a relative delay. In this installation the viewer observes the input of hand motion returned to them in an audiovisual form. Moving hand slowly inside the frame the user can examine how the visuals and sounds reflect her movement. The work is created with software tools Kinect, Processing and Pure Data. In this project, my role was to suggest the ideas, concept design, implement a prototype, final system and lead software team. The development tool is processing and I used Kinect sensor to detect audience hand.'
+    }
+  ]
+}
+
+export const Data_Exhibition_SeeingMusic = {
+  resourcePath: './images/works',
+  contents: [
+    {
+      width:45,
+      aspecRatio: 0.74,
+      fullScreenScale: 1.45,
+      year:'23 Feb - 03 Mar 2019',
+      thumbnailImage: 'aqua_08.JPG',
+      contentsImage: ['https://www.youtube.com/embed/3yvqrAyYy-4','SeeingSound_01.JPG','SeeingSound_03.JPG','SeeingSound_04.JPG','SeeingSound_08.JPG','SeeingSound_10.JPG','SeeingSound_11.JPG','SeeingSound_12.JPG'],
+      title: 'SEEING SOUND LISTENING TO IMAGE',
+      subTitle: 'Aalto University Finland',
+      descptionTitle : 'Aalto University Finland',
+      tool: 'openFrameworks Arduino 3D Printing',
+      description: 'Out of all the sensory stimuli that we process, sound is one of the most (recognizable). However, as our ears, not our eyes, are the sensory organ responsible for perceiving and understanding this auditory information. Through my exhibition, I focus on making this unseeable data more tangible, exploring how our brain could potentially interpret sound differently if it was transformed into another medium. If a sound could be converted into an image or physical object, could that amplify our cognitive understanding of the sounds we hear? Or does it instead alter or interrupt this process?'
+    },
   ]
 }
 
@@ -224,5 +269,44 @@ export const Data_WorksSubMenu = {
       extraDescription: 'Objective-C Swift JavaScript React C C++ C# Node.js'
     }
   ],
-  data: Data_Generative
+  data: global.worksMenu
+}
+
+export const Data_ExhibitionSubMenu = {
+  contents: [
+    {
+      id:global.exhibitionMenu.whenlightEchoes,
+      title: 'WHEN LIGHT ECHOES',
+      titleImage:require('../data/images/thumbnail/thumbnail_korea_Exhibition_06.JPG'),
+      description: 'A light echo is a physical phenomenon caused by light reflected off surfaces and returning to the observer with a relative delay. In this installation the viewer observes the input of hand motion returned to them in an audiovisual form.',
+      author: 'Vera Molnar',
+      backgroundColor: '#bf8726',
+      extraDescription: 'Processing Kinect sensor 4K projector'
+    },
+    {
+      id:global.exhibitionMenu.seeingSound,
+      title: 'SEEING MUSIC',
+      titleImage:require('../data/images/thumbnail/thumbnail_seeing_sound.JPG'),
+      description: 'If a sound could be converted into an image or physical object, could that amplify our cognitive understanding of the sounds we hear? Or does it instead alter or interrupt this process?',
+      author: 'Vera Molnar',
+      backgroundColor: '#bfa126',
+      extraDescription: 'openFrameworks 3D Printing Arduino'
+    },
+  ],
+  data: global.exhibitionMenu
+}
+
+export const Data_ContactSubMenu = {
+  contents: [
+    {
+      id:global.contactMenu.basicInfo,
+      title: 'John Lee',
+      titleImage:require('../data/images/thumbnail/thumbnail_korea_Exhibition_06.JPG'),
+      description: 'A creative developer and New media artist',
+      author: 'Vera Molnar',
+      backgroundColor: '#bf8726',
+      extraDescription: 'C C++ Objective-C React Node.js React Native GraphQL'
+    }
+  ],
+  data: null
 }
